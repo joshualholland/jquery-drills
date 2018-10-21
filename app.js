@@ -22,5 +22,9 @@ $(document).ready(function () {
         let randomColor = 'rgb(' + Math.floor((Math.random() * 256)) + ',' + Math.floor((Math.random() * 256)) + ',' + Math.floor((Math.random() * 256)) + ')';
         return randomColor;
     };
+// remove li after it is double clicked
+    $('ul').dblclick(function (event) {
+        $(event.target).remove();
+    });
 });
 
